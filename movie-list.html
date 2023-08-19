@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary meta Tags -->
+    <meta
+      name="description"
+      content="Tvflix is a popular movie app made by codewithsadee."
+    />
+    <!-- FaveIcon -->
+    <link rel="icon" href="favicon.svg" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Custom JS Link -->
+    <script src="assets/js/global.js" defer></script>
+    <script type="module" src="assets/js/movie-list.js"></script>
+  </head>
+  <body>
+    <!-- #Header -->
+    <header class="header">
+      <a href="" class="logo">
+        <img
+          src="assets/images/logo.svg"
+          width="140"
+          height="32"
+          alt="Tvflix home"
+        />
+      </a>
+
+      <a href="" class="tv-show">Movie</a>
+
+      <div class="search-box" search-box>
+        <div class="search-wrapper" search-wrapper>
+          <input
+            type="text"
+            name="search"
+            aria-label="search movies"
+            placeholder="Search any movies..."
+            class="search-field"
+            search-filed
+            autocomplete="off"
+          />
+
+          <i
+            class="fa-solid fa-magnifying-glass loading-icon"
+            title="search"
+          ></i>
+        </div>
+
+        <button title="close search box" class="search-btn" search-toggler>
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="search-btn" search-toggler menu-close>
+        <i title="open search box" class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <button class="menu-btn" menu-btn menu-toggler>
+        <i class="fas fa-bars menu" title="open menu"></i>
+        <img
+          src="assets/images/menu-close.png"
+          alt="close menu"
+          width="24"
+          height="24"
+          class="close"
+        />
+      </button>
+    </header>
+
+    <main>
+      <!-- #Sidebar -->
+      <nav class="sidebar" sidebar></nav>
+
+      <div class="overlay menu-toggler" overlay menu-toggler></div>
+
+      <article class="container" page-content></article>
+    </main>
+  </body>
+</html>
